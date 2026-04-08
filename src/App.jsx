@@ -27,6 +27,7 @@ function App() {
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
           <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -35,11 +36,10 @@ function App() {
       <section className="hero">
         <p className="tag">Java Backend Developer</p>
         <h1>Nisha Tamta</h1>
-        {/* <h2>3x Certified in AWS, MuleSoft, and Salesforce</h2> */}
         <h2>AWS Certified Developer | Salesforce Certified MuleSoft Developer | Salesforce Certified Platform Administrator</h2>
         <p className="hero-text">
           Backend Software Engineer with 6+ years of experience building Java-based backend systems,
-          REST APIs, cloud applications, and enterprise integrations solutions.
+          REST APIs, cloud applications, and enterprise integration solutions.
         </p>
         <div className="hero-buttons">
           <a className="primary-button" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
@@ -156,6 +156,38 @@ function App() {
           </ul>
 
           <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-customer-sync" target="_blank" rel="noreferrer">View GitHub</a>
+        </div>
+      </section>
+
+      <section id="experience" className="section">
+        <h3>Backend Experience Highlights</h3>
+
+        <div className="experience-card">
+          <h4>IQM Ad-Tech Platform</h4>
+          <p>
+            Built backend solutions for IQM, an ad-tech platform, using Java, SQL, Snowflake, and AWS
+            to improve data processing and storage efficiency. Designed AWS Lambda-based serverless
+            components and integrated services such as EventBridge, SNS, SQS, SES, and S3 to support
+            scalable event-driven workflows.
+          </p>
+
+          <div className="stack-tags">
+            <span>Java</span>
+            <span>SQL</span>
+            <span>Snowflake</span>
+            <span>AWS Lambda</span>
+            <span>EventBridge</span>
+            <span>SNS</span>
+            <span>SQS</span>
+            <span>SES</span>
+            <span>S3</span>
+          </div>
+
+          <ul>
+            <li>Built Java-based backend solutions for an ad-tech platform</li>
+            <li>Designed Lambda-based components for scalable backend processing</li>
+            <li>Integrated AWS services to support resilient event-driven workflows</li>
+          </ul>
         </div>
       </section>
 

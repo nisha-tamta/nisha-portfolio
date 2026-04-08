@@ -188,7 +188,8 @@ section {
 }
 
 .card,
-.project-card {
+.project-card,
+.experience-card {
   background: #ffffff;
   border: 1px solid #dbe3ee;
   border-radius: 12px;
@@ -197,7 +198,8 @@ section {
 }
 
 .card h4,
-.project-card h4 {
+.project-card h4,
+.experience-card h4 {
   margin-bottom: 10px;
   color: #0f172a;
 }
@@ -225,12 +227,14 @@ section {
   margin-bottom: 32px;
 }
 
-.project-card h4 {
+.project-card h4,
+.experience-card h4 {
   font-size: 1.35rem;
   margin-bottom: 12px;
 }
 
-.project-card p {
+.project-card p,
+.experience-card p {
   margin-bottom: 12px;
   color: #475569;
 }
@@ -274,12 +278,14 @@ section {
   font-weight: 700;
 }
 
-.project-card ul {
+.project-card ul,
+.experience-card ul {
   padding-left: 18px;
   margin: 14px 0;
 }
 
-.project-card li {
+.project-card li,
+.experience-card li {
   margin-bottom: 8px;
   color: #334155;
 }
