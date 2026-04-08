@@ -43,6 +43,7 @@ section {
   background: rgba(238, 243, 249, 0.9);
   border-bottom: 1px solid #dbe3ee;
   backdrop-filter: blur(10px);
+  min-height: 72px;
 }
 
 .navbar nav {
@@ -67,6 +68,18 @@ section {
   font-weight: 700;
   color: #0f172a;
   letter-spacing: -0.02em;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.logo-hidden {
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+}
+
+.logo-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero {
@@ -237,14 +250,10 @@ section {
   border-radius: 8px;
 }
 
-.project-label {
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #2563eb;
-  margin-top: 10px;
-  margin-bottom: 6px;
+.project-impact {
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 14px;
 }
 
 .stack-tags {

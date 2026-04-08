@@ -1,10 +1,28 @@
+import { useEffect, useState } from 'react'
 import './index.css'
 
 function App() {
+  const [showStickyName, setShowStickyName] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const triggerPoint = 220
+      setShowStickyName(window.scrollY > triggerPoint)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <div className="site">
       <header className="navbar">
-        <div className="logo">Nisha Tamta</div>
+        <div className={`logo ${showStickyName ? 'logo-visible' : 'logo-hidden'}`}>
+          Nisha Tamta
+        </div>
+
         <nav>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -85,10 +103,10 @@ function App() {
             DataWeave mappings, and error handling for reliable sync.
           </p>
 
-          <p className="project-label">Impact</p>
-          <p>Improved sync reliability and reduced duplicate record risk through External ID based upsert logic.</p>
+          <p className="project-impact">
+            Improved sync reliability and reduced duplicate record risk through External ID based upsert logic.
+          </p>
 
-          <p className="project-label">Tech Stack</p>
           <div className="stack-tags">
             <span>MuleSoft 4</span>
             <span>DataWeave 2.0</span>
@@ -98,7 +116,6 @@ function App() {
             <span>Java 17</span>
           </div>
 
-          <p className="project-label">Highlights</p>
           <ul>
             <li>Built process and system API flow for account sync</li>
             <li>Implemented External ID based create/update logic</li>
@@ -119,10 +136,10 @@ function App() {
             handling, and end-to-end local testing.
           </p>
 
-          <p className="project-label">Impact</p>
-          <p>Enabled consistent downstream ERP synchronization using transformed Salesforce account data.</p>
+          <p className="project-impact">
+            Enabled consistent downstream ERP synchronization using transformed Salesforce account data.
+          </p>
 
-          <p className="project-label">Tech Stack</p>
           <div className="stack-tags">
             <span>MuleSoft</span>
             <span>Salesforce Connector</span>
@@ -132,7 +149,6 @@ function App() {
             <span>Postman</span>
           </div>
 
-          <p className="project-label">Highlights</p>
           <ul>
             <li>Retrieved Salesforce Account data through MuleSoft flow</li>
             <li>Transformed payloads for downstream ERP sync</li>
