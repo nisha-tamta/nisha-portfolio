@@ -39,7 +39,7 @@ function App() {
         <h2>AWS Certified Developer | Salesforce Certified MuleSoft Developer | Salesforce Certified Platform Administrator</h2>
         <p className="hero-text">
           Backend Software Engineer with 6+ years of experience building Java-based backend systems,
-          REST APIs, cloud applications, and enterprise integrations across AWS, MuleSoft, and Salesforce.
+          REST APIs, cloud applications, and enterprise integrations solutions.
         </p>
         <div className="hero-buttons">
           <a className="primary-button" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
@@ -52,10 +52,10 @@ function App() {
       <section id="about" className="section">
         <h3>About</h3>
         <p>
-          I am a backend software engineer with 6+ years of experience building backend systems,
-          REST APIs, and cloud-based applications. My background includes Java, Spring Boot, SQL,
-          AWS, and enterprise integration work using MuleSoft, DataWeave, and Salesforce. I focus
-          on building reliable APIs, scalable backend services, and clean integration flows.
+          I am a backend software engineer with 6+ years of experience designing and building scalable APIs,
+          backend services, and cloud-based applications. My background includes Java, Spring Boot, SQL,
+          AWS, and enterprise integration work using MuleSoft, DataWeave, and Salesforce. I focus on
+          building reliable systems, clean data flows, and maintainable integration solutions.
         </p>
       </section>
 
@@ -74,12 +74,12 @@ function App() {
 
           <div className="card">
             <h4>Integration</h4>
-            <p>MuleSoft, DataWeave, API-led Connectivity, Postman, Swagger, OAuth 2.0, JSON/XML</p>
+            <p>MuleSoft, DataWeave, API-led Connectivity, Postman, Swagger, OAuth 2.0, JSON, XML</p>
           </div>
 
           <div className="card">
             <h4>Salesforce</h4>
-            <p>Salesforce Integration, Connector, Bulk API, Composite API, Platform Events, CDC, External IDs</p>
+            <p>Salesforce Integration, Salesforce Connector, Bulk API, Composite API, Platform Events, CDC, External IDs</p>
           </div>
 
           <div className="card">
@@ -98,13 +98,13 @@ function App() {
           </div>
           <h4>Salesforce to ERP Customer Sync using MuleSoft</h4>
           <p>
-            Built an end-to-end MuleSoft integration between Salesforce and a mock ERP system using
-            process and system APIs. Implemented Salesforce Account upsert with External ID matching,
-            DataWeave mappings, and error handling for reliable sync.
+            Built an end-to-end MuleSoft integration between Salesforce and a mock ERP system using process
+            and system APIs. Implemented Salesforce Account upsert with External ID matching,
+            DataWeave transformations, and structured error handling to support reliable synchronization.
           </p>
 
           <p className="project-impact">
-            Improved sync reliability and reduced duplicate record risk through External ID based upsert logic.
+            Improved synchronization reliability and reduced duplicate record risk through External ID–based upsert logic.
           </p>
 
           <div className="stack-tags">
@@ -117,8 +117,8 @@ function App() {
           </div>
 
           <ul>
-            <li>Built process and system API flow for account sync</li>
-            <li>Implemented External ID based create/update logic</li>
+            <li>Built process and system API flows for account synchronization</li>
+            <li>Implemented External ID–based create/update logic</li>
             <li>Added validation, transformation, and structured error handling</li>
           </ul>
 
@@ -131,13 +131,13 @@ function App() {
           </div>
           <h4>Salesforce to MuleSoft ERP Account Sync</h4>
           <p>
-            Built a MuleSoft flow to retrieve Salesforce Account data and sync transformed payloads
-            to a mock ERP API. Implemented Salesforce SOAP authentication, REST retrieval, session
-            handling, and end-to-end local testing.
+            Built a MuleSoft flow to retrieve Salesforce Account data and synchronize transformed payloads
+            with a mock ERP API. Implemented Salesforce SOAP authentication, REST-based retrieval,
+            session handling, and end-to-end local testing.
           </p>
 
           <p className="project-impact">
-            Enabled consistent downstream ERP synchronization using transformed Salesforce account data.
+            Enabled consistent ERP synchronization using transformed Salesforce Account data.
           </p>
 
           <div className="stack-tags">
@@ -150,9 +150,9 @@ function App() {
           </div>
 
           <ul>
-            <li>Retrieved Salesforce Account data through MuleSoft flow</li>
-            <li>Transformed payloads for downstream ERP sync</li>
-            <li>Tested full integration locally end to end</li>
+            <li>Retrieved Salesforce Account data through a MuleSoft integration flow</li>
+            <li>Transformed payloads for downstream ERP synchronization</li>
+            <li>Tested the integration locally end to end</li>
           </ul>
 
           <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-customer-sync" target="_blank" rel="noreferrer">View GitHub</a>
@@ -163,7 +163,7 @@ function App() {
         <h3>Certifications</h3>
         <div className="grid">
           <div className="card">
-            <h4>AWS Certified Developer – Associate (DVA-C02)</h4>
+            <h4>AWS Certified Developer - Associate (DVA-C02)</h4>
             <p>2026</p>
             <a
               href="https://www.credly.com/badges/8e9366de-ef05-4bad-aade-03cf65f6036b/public_url"
@@ -203,7 +203,7 @@ function App() {
       <section id="contact" className="section">
         <h3>Contact</h3>
         <div className="card">
-          <p className="contact-note">Open to backend and integration engineering opportunities.</p>
+          <p className="contact-note">Open to backend software engineering and integration engineering opportunities.</p>
           <p>
             Email:{' '}
             <a href="mailto:nisha.tamta199@gmail.com">
