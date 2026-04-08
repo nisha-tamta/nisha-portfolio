@@ -19,9 +19,8 @@ function App() {
         <h1>Nisha Tamta</h1>
         <h2>AWS Certified | MuleSoft & Salesforce Integration</h2>
         <p className="hero-text">
-          Backend Software Engineer with 6+ years of experience building scalable backend systems,
-          REST APIs, and cloud-based applications using Java, Spring Boot, SQL, AWS, MuleSoft,
-          and Salesforce integration patterns.
+          Backend Software Engineer with 6+ years of experience building Java-based backend systems,
+          REST APIs, cloud applications, and enterprise integrations across AWS, MuleSoft, and Salesforce.
         </p>
         <div className="hero-buttons">
           <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
@@ -48,17 +47,25 @@ function App() {
             <h4>Backend</h4>
             <p>Java, Spring Boot, Hibernate, JPA, Microservices, REST APIs</p>
           </div>
+
           <div className="card">
             <h4>Cloud</h4>
-            <p>AWS Lambda, SQS, SNS, EventBridge, S3, RDS, CloudWatch, IAM</p>
+            <p>AWS Lambda, S3, SQS, SNS, EventBridge, RDS, CloudWatch, IAM</p>
           </div>
+
           <div className="card">
             <h4>Integration</h4>
-            <p>MuleSoft, API-led Connectivity, DataWeave, Postman, Swagger, JSON, XML, OAuth 2.0</p>
+            <p>MuleSoft, DataWeave, API-led Connectivity, Postman, Swagger, OAuth 2.0, JSON, XML</p>
           </div>
+
           <div className="card">
             <h4>Salesforce</h4>
             <p>Salesforce Integration, Salesforce Connector, Bulk API, Composite API, Platform Events, CDC, External IDs</p>
+          </div>
+
+          <div className="card">
+            <h4>Databases &amp; Tools</h4>
+            <p>MySQL, PostgreSQL, Oracle, SQL Server, MongoDB, Git, Maven, Jenkins</p>
           </div>
         </div>
       </section>
@@ -74,13 +81,14 @@ function App() {
             process and system APIs. Implemented Salesforce Account upsert with External ID matching,
             DataWeave mappings, and error handling for reliable sync.
           </p>
+          <p><strong>Impact:</strong> Improved sync reliability and reduced duplicate record risk through External ID based upsert logic.</p>
           <p><strong>Tech Stack:</strong> MuleSoft 4, DataWeave 2.0, Salesforce Connector, REST APIs, Maven, Java 17</p>
           <ul>
             <li>Built process and system API flow for account sync</li>
             <li>Implemented External ID based create/update logic</li>
             <li>Added validation, transformation, and structured error handling</li>
           </ul>
-          <a href="https://github.com/nisha-tamta/salesforce-mulesoft-account-sync" target="_blank" rel="noreferrer">View GitHub</a>
+          <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-account-sync" target="_blank" rel="noreferrer">View GitHub</a>
         </div>
 
         <div className="project-card">
@@ -91,29 +99,38 @@ function App() {
             to a mock ERP API. Implemented Salesforce SOAP authentication, REST retrieval, session
             handling, and end-to-end local testing.
           </p>
+          <p><strong>Impact:</strong> Enabled consistent downstream ERP synchronization using transformed Salesforce account data.</p>
           <p><strong>Tech Stack:</strong> MuleSoft, Salesforce Connector, SOAP, REST, DataWeave, Postman</p>
           <ul>
             <li>Retrieved Salesforce Account data through MuleSoft flow</li>
             <li>Transformed payloads for downstream ERP sync</li>
             <li>Tested full integration locally end to end</li>
           </ul>
-          <a href="https://github.com/nisha-tamta/salesforce-mulesoft-customer-sync" target="_blank" rel="noreferrer">View GitHub</a>
+          <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-customer-sync" target="_blank" rel="noreferrer">View GitHub</a>
         </div>
       </section>
 
       <section id="certifications" className="section">
         <h3>Certifications</h3>
         <div className="card">
-          <p>AWS Certified Developer – Associate (DVA-C02) | 2026</p>
-          <p>Salesforce Certified MuleSoft Developer | 2026</p>
-          <p>Salesforce Certified Platform Administrator | 2026</p>
+          <ul className="cert-list">
+            <li>AWS Certified Developer – Associate (DVA-C02) | 2026</li>
+            <li>Salesforce Certified MuleSoft Developer | 2026</li>
+            <li>Salesforce Certified Platform Administrator | 2026</li>
+          </ul>
         </div>
       </section>
 
       <section id="contact" className="section">
         <h3>Contact</h3>
         <div className="card">
-          <p>Email: nisha.tamta199@gmail.com</p>
+          <p className="contact-note">Open to backend and integration engineering opportunities.</p>
+          <p>
+            Email:{' '}
+            <a href="mailto:nisha.tamta199@gmail.com">
+              nisha.tamta199@gmail.com
+            </a>
+          </p>
           <p>
             LinkedIn:{' '}
             <a href="https://www.linkedin.com/in/javadevelopernisha" target="_blank" rel="noreferrer">

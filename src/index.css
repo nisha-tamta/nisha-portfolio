@@ -26,20 +26,26 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 24px 0;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
 }
 
 .navbar nav {
   display: flex;
-  gap: 18px;
+  gap: 22px;
   flex-wrap: wrap;
 }
 
+.navbar nav a {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
 .logo {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111827;
 }
 
 .hero {
@@ -81,15 +87,16 @@ a {
   border-radius: 8px;
   background: #111827;
   color: white;
+  font-weight: 600;
 }
 
 .section {
-  padding: 40px 0;
+  padding: 56px 0;
 }
 
 .section h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 24px;
 }
 
 .grid {
@@ -101,17 +108,43 @@ a {
 .card,
 .project-card {
   background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.card p {
+  color: #374151;
 }
 
 .project-card {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.project-card h4 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.project-card strong {
+  color: #111827;
 }
 
 .project-card img {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: 10px;
   margin-bottom: 16px;
 }
@@ -124,6 +157,31 @@ a {
 .project-card ul {
   padding-left: 18px;
   margin: 14px 0;
+}
+
+.project-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.cert-list {
+  padding-left: 20px;
+}
+
+.cert-list li {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.contact-note {
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #111827;
 }
 
 @media (max-width: 768px) {
