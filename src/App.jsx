@@ -17,10 +17,15 @@ function App() {
       <section className="hero">
         <p className="tag">Java Backend Developer</p>
         <h1>Nisha Tamta</h1>
-        <h2>AWS Certified | MuleSoft & Salesforce Integration</h2>
+        {/* <h2>AWS Certified Developer | Salesforce Certified MuleSoft Developer | Salesforce Certified Platform Administrator</h2> */}
+        <h2>Java Backend Developer | 3x Certified in AWS, MuleSoft, and Salesforce</h2>
         <p className="hero-text">
           Backend Software Engineer with 6+ years of experience building Java-based backend systems,
-          REST APIs, cloud applications, and enterprise integrations across AWS, MuleSoft, and Salesforce.
+          REST APIs, cloud applications, and enterprise integrations, backed by certifications in AWS,
+          MuleSoft, and Salesforce.
+        </p>
+        <p className="cert-summary">
+          AWS Certified Developer • Salesforce Certified MuleSoft Developer • Salesforce Certified Platform Administrator
         </p>
         <div className="hero-buttons">
           <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
@@ -35,8 +40,10 @@ function App() {
         <p>
           I am a backend software engineer with 6+ years of experience building backend systems,
           REST APIs, and cloud-based applications. My background includes Java, Spring Boot, SQL,
-          AWS, and enterprise integration work using MuleSoft, DataWeave, and Salesforce. I focus
-          on building reliable APIs, scalable backend services, and clean integration flows.
+          AWS, and enterprise integration work using MuleSoft, DataWeave, and Salesforce. I also
+          hold certifications in AWS, Salesforce MuleSoft Development, and Salesforce Platform
+          Administration. I focus on building reliable APIs, scalable backend services, and clean
+          integration flows.
         </p>
       </section>
 
@@ -112,12 +119,30 @@ function App() {
 
       <section id="certifications" className="section">
         <h3>Certifications</h3>
-        <div className="card">
-          <ul className="cert-list">
-            <li>AWS Certified Developer – Associate (DVA-C02) | 2026</li>
-            <li>Salesforce Certified MuleSoft Developer | 2026</li>
-            <li>Salesforce Certified Platform Administrator | 2026</li>
-          </ul>
+        <div className="grid">
+          <div className="card">
+            <h4>AWS Certified Developer – Associate (DVA-C02)</h4>
+            <p>2026</p>
+            <a href="https://www.credly.com/badges/8e9366de-ef05-4bad-aade-03cf65f6036b/public_url" target="_blank" rel="noreferrer">
+              Verify Credential
+            </a>
+          </div>
+
+          <div className="card">
+            <h4>Salesforce Certified MuleSoft Developer</h4>
+            <p>2026</p>
+            <a href="https://trailhead.salesforce.com/en/credentials/verification/" target="_blank" rel="noreferrer">
+              Verify Credential
+            </a>
+          </div>
+
+          <div className="card">
+            <h4>Salesforce Certified Platform Administrator</h4>
+            <p>2026</p>
+            <a href="https://trailhead.salesforce.com/en/credentials/verification/" target="_blank" rel="noreferrer">
+              Verify Credential
+            </a>
+          </div>
         </div>
       </section>
 
