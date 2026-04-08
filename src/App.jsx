@@ -17,15 +17,10 @@ function App() {
       <section className="hero">
         <p className="tag">Java Backend Developer</p>
         <h1>Nisha Tamta</h1>
-        {/* <h2>AWS Certified Developer | Salesforce Certified MuleSoft Developer | Salesforce Certified Platform Administrator</h2> */}
-        <h2>Java Backend Developer | 3x Certified in AWS, MuleSoft, and Salesforce</h2>
+        <h2>AWS Certified Developer | Salesforce Certified MuleSoft Developer | Salesforce Certified Platform Administrator</h2>
         <p className="hero-text">
           Backend Software Engineer with 6+ years of experience building Java-based backend systems,
-          REST APIs, cloud applications, and enterprise integrations, backed by certifications in AWS,
-          MuleSoft, and Salesforce.
-        </p>
-        <p className="cert-summary">
-          AWS Certified Developer • Salesforce Certified MuleSoft Developer • Salesforce Certified Platform Administrator
+          REST APIs, cloud applications, and enterprise integrations across AWS, MuleSoft, and Salesforce.
         </p>
         <div className="hero-buttons">
           <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
@@ -49,7 +44,7 @@ function App() {
 
       <section id="skills" className="section">
         <h3>Skills</h3>
-        <div className="grid">
+        <div className="skills-grid">
           <div className="card">
             <h4>Backend</h4>
             <p>Java, Spring Boot, Hibernate, JPA, Microservices, REST APIs</p>
@@ -62,12 +57,12 @@ function App() {
 
           <div className="card">
             <h4>Integration</h4>
-            <p>MuleSoft, DataWeave, API-led Connectivity, Postman, Swagger, OAuth 2.0, JSON, XML</p>
+            <p>MuleSoft, DataWeave, API-led Connectivity, Postman, Swagger, OAuth 2.0, JSON/XML</p>
           </div>
 
           <div className="card">
             <h4>Salesforce</h4>
-            <p>Salesforce Integration, Salesforce Connector, Bulk API, Composite API, Platform Events, CDC, External IDs</p>
+            <p>Salesforce Integration, Connector, Bulk API, Composite API, Platform Events, CDC, External IDs</p>
           </div>
 
           <div className="card">
