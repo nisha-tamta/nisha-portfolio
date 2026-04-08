@@ -17,6 +17,7 @@ function App() {
       <section className="hero">
         <p className="tag">Java Backend Developer</p>
         <h1>Nisha Tamta</h1>
+        {/* <h2>3x Certified in AWS, MuleSoft, and Salesforce</h2> */}
         <h2>AWS Certified Developer | Salesforce Certified MuleSoft Developer | Salesforce Certified Platform Administrator</h2>
         <p className="hero-text">
           Backend Software Engineer with 6+ years of experience building Java-based backend systems,
@@ -35,10 +36,8 @@ function App() {
         <p>
           I am a backend software engineer with 6+ years of experience building backend systems,
           REST APIs, and cloud-based applications. My background includes Java, Spring Boot, SQL,
-          AWS, and enterprise integration work using MuleSoft, DataWeave, and Salesforce. I also
-          hold certifications in AWS, Salesforce MuleSoft Development, and Salesforce Platform
-          Administration. I focus on building reliable APIs, scalable backend services, and clean
-          integration flows.
+          AWS, and enterprise integration work using MuleSoft, DataWeave, and Salesforce. I focus
+          on building reliable APIs, scalable backend services, and clean integration flows.
         </p>
       </section>
 
@@ -85,8 +84,11 @@ function App() {
             process and system APIs. Implemented Salesforce Account upsert with External ID matching,
             DataWeave mappings, and error handling for reliable sync.
           </p>
+
           <p className="project-label">Impact</p>
           <p>Improved sync reliability and reduced duplicate record risk through External ID based upsert logic.</p>
+
+          <p className="project-label">Tech Stack</p>
           <div className="stack-tags">
             <span>MuleSoft 4</span>
             <span>DataWeave 2.0</span>
@@ -95,12 +97,14 @@ function App() {
             <span>Maven</span>
             <span>Java 17</span>
           </div>
+
           <p className="project-label">Highlights</p>
           <ul>
             <li>Built process and system API flow for account sync</li>
             <li>Implemented External ID based create/update logic</li>
             <li>Added validation, transformation, and structured error handling</li>
           </ul>
+
           <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-account-sync" target="_blank" rel="noreferrer">View GitHub</a>
         </div>
 
@@ -114,8 +118,11 @@ function App() {
             to a mock ERP API. Implemented Salesforce SOAP authentication, REST retrieval, session
             handling, and end-to-end local testing.
           </p>
+
           <p className="project-label">Impact</p>
           <p>Enabled consistent downstream ERP synchronization using transformed Salesforce account data.</p>
+
+          <p className="project-label">Tech Stack</p>
           <div className="stack-tags">
             <span>MuleSoft</span>
             <span>Salesforce Connector</span>
@@ -124,12 +131,14 @@ function App() {
             <span>DataWeave</span>
             <span>Postman</span>
           </div>
+
           <p className="project-label">Highlights</p>
           <ul>
             <li>Retrieved Salesforce Account data through MuleSoft flow</li>
             <li>Transformed payloads for downstream ERP sync</li>
             <li>Tested full integration locally end to end</li>
           </ul>
+
           <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-customer-sync" target="_blank" rel="noreferrer">View GitHub</a>
         </div>
       </section>
@@ -140,7 +149,11 @@ function App() {
           <div className="card">
             <h4>AWS Certified Developer – Associate (DVA-C02)</h4>
             <p>2026</p>
-            <a href="https://www.credly.com/badges/8e9366de-ef05-4bad-aade-03cf65f6036b/public_url" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.credly.com/badges/8e9366de-ef05-4bad-aade-03cf65f6036b/public_url"
+              target="_blank"
+              rel="noreferrer"
+            >
               Verify Credential
             </a>
           </div>
@@ -148,7 +161,11 @@ function App() {
           <div className="card">
             <h4>Salesforce Certified MuleSoft Developer</h4>
             <p>2026</p>
-            <a href="https://trailhead.salesforce.com/en/credentials/verification/" target="_blank" rel="noreferrer">
+            <a
+              href="https://trailhead.salesforce.com/en/credentials/verification/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Verify Credential
             </a>
           </div>
@@ -156,7 +173,11 @@ function App() {
           <div className="card">
             <h4>Salesforce Certified Platform Administrator</h4>
             <p>2026</p>
-            <a href="https://trailhead.salesforce.com/en/credentials/verification/" target="_blank" rel="noreferrer">
+            <a
+              href="https://trailhead.salesforce.com/en/credentials/verification/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Verify Credential
             </a>
           </div>
