@@ -23,10 +23,10 @@ function App() {
           REST APIs, cloud applications, and enterprise integrations across AWS, MuleSoft, and Salesforce.
         </p>
         <div className="hero-buttons">
-          <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-          <a href="https://github.com/nisha-tamta" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/javadevelopernisha" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="#contact">Contact</a>
+          <a className="primary-button" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          <a className="secondary-button" href="https://github.com/nisha-tamta" target="_blank" rel="noreferrer">GitHub</a>
+          <a className="secondary-button" href="https://www.linkedin.com/in/javadevelopernisha" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a className="secondary-button" href="#contact">Contact</a>
         </div>
       </section>
 
@@ -76,15 +76,26 @@ function App() {
         <h3>Projects</h3>
 
         <div className="project-card">
-          <img src="/project1-architecture.png" alt="Salesforce to ERP Customer Sync architecture diagram" />
+          <div className="project-image-wrap">
+            <img src="/project1-architecture.png" alt="Salesforce to ERP Customer Sync architecture diagram" />
+          </div>
           <h4>Salesforce to ERP Customer Sync using MuleSoft</h4>
           <p>
             Built an end-to-end MuleSoft integration between Salesforce and a mock ERP system using
             process and system APIs. Implemented Salesforce Account upsert with External ID matching,
             DataWeave mappings, and error handling for reliable sync.
           </p>
-          <p><strong>Impact:</strong> Improved sync reliability and reduced duplicate record risk through External ID based upsert logic.</p>
-          <p><strong>Tech Stack:</strong> MuleSoft 4, DataWeave 2.0, Salesforce Connector, REST APIs, Maven, Java 17</p>
+          <p className="project-label">Impact</p>
+          <p>Improved sync reliability and reduced duplicate record risk through External ID based upsert logic.</p>
+          <div className="stack-tags">
+            <span>MuleSoft 4</span>
+            <span>DataWeave 2.0</span>
+            <span>Salesforce Connector</span>
+            <span>REST APIs</span>
+            <span>Maven</span>
+            <span>Java 17</span>
+          </div>
+          <p className="project-label">Highlights</p>
           <ul>
             <li>Built process and system API flow for account sync</li>
             <li>Implemented External ID based create/update logic</li>
@@ -94,15 +105,26 @@ function App() {
         </div>
 
         <div className="project-card">
-          <img src="/project2-architecture.png" alt="Salesforce to MuleSoft ERP Account Sync flow screenshot" />
+          <div className="project-image-wrap">
+            <img src="/project2-architecture.png" alt="Salesforce to MuleSoft ERP Account Sync flow screenshot" />
+          </div>
           <h4>Salesforce to MuleSoft ERP Account Sync</h4>
           <p>
             Built a MuleSoft flow to retrieve Salesforce Account data and sync transformed payloads
             to a mock ERP API. Implemented Salesforce SOAP authentication, REST retrieval, session
             handling, and end-to-end local testing.
           </p>
-          <p><strong>Impact:</strong> Enabled consistent downstream ERP synchronization using transformed Salesforce account data.</p>
-          <p><strong>Tech Stack:</strong> MuleSoft, Salesforce Connector, SOAP, REST, DataWeave, Postman</p>
+          <p className="project-label">Impact</p>
+          <p>Enabled consistent downstream ERP synchronization using transformed Salesforce account data.</p>
+          <div className="stack-tags">
+            <span>MuleSoft</span>
+            <span>Salesforce Connector</span>
+            <span>SOAP</span>
+            <span>REST</span>
+            <span>DataWeave</span>
+            <span>Postman</span>
+          </div>
+          <p className="project-label">Highlights</p>
           <ul>
             <li>Retrieved Salesforce Account data through MuleSoft flow</li>
             <li>Transformed payloads for downstream ERP sync</li>
