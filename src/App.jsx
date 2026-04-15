@@ -34,12 +34,12 @@ function App() {
       </header>
 
       <section className="hero">
-        <p className="tag">Java Backend Developer</p>
+        <p className="tag">Java Backend Developer | Java Full Stack Developer</p>
         <h1>Nisha Tamta</h1>
         <h2>AWS Certified Developer | Salesforce Certified MuleSoft Developer | Salesforce Certified Platform Administrator</h2>
         <p className="hero-text">
-          Backend Software Engineer with 6+ years of experience building Java-based backend systems,
-          REST APIs, cloud applications, and enterprise integration solutions.
+          Software Engineer with 6+ years of experience building Java backend systems, REST APIs,
+          cloud applications, full stack web applications, and enterprise integration solutions.
         </p>
         <div className="hero-buttons">
           <a className="primary-button" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
@@ -52,10 +52,10 @@ function App() {
       <section id="about" className="section">
         <h3>About</h3>
         <p>
-          I am a backend software engineer with 6+ years of experience designing and building scalable APIs,
-          backend services, and cloud-based applications. My background includes Java, Spring Boot, SQL,
-          AWS, and enterprise integration work using MuleSoft, DataWeave, and Salesforce. I focus on
-          building reliable systems, clean data flows, and maintainable integration solutions.
+          I am a software engineer with 6+ years of experience building scalable backend services,
+          REST APIs, cloud-based applications, and enterprise integrations. My background includes Java,
+          Spring Boot, SQL, AWS, MuleSoft, Salesforce, and React. I focus on building reliable systems,
+          clean data flows, and maintainable end-to-end solutions across backend, integration, and full stack applications.
         </p>
       </section>
 
@@ -65,6 +65,11 @@ function App() {
           <div className="card">
             <h4>Backend</h4>
             <p>Java, Spring Boot, Hibernate, JPA, Microservices, REST APIs</p>
+          </div>
+
+          <div className="card">
+            <h4>Frontend</h4>
+            <p>React, JavaScript, HTML5, CSS3</p>
           </div>
 
           <div className="card">
@@ -84,13 +89,47 @@ function App() {
 
           <div className="card">
             <h4>Databases &amp; Tools</h4>
-            <p>MySQL, PostgreSQL, Oracle, SQL Server, MongoDB, Git, Maven, Jenkins</p>
+            <p>MySQL, PostgreSQL, Oracle, SQL Server, MongoDB, Git, Maven, Gradle, Jenkins, JUnit</p>
           </div>
         </div>
       </section>
 
       <section id="projects" className="section">
         <h3>Projects</h3>
+
+        <div className="project-card">
+          <div className="project-image-wrap">
+            <img src="/cashflow-manager-architecture.png" alt="CashFlow Manager architecture diagram" />
+          </div>
+          <h4>CashFlow Manager</h4>
+          <p>
+            Built a full stack expense management web application using Java, Spring Boot, React, REST APIs, and PostgreSQL.
+            Implemented user authentication, expense tracking, budget management, reporting, and end-to-end CRUD functionality.
+          </p>
+
+          <p className="project-impact">
+            Showcases end-to-end full stack development across frontend, backend, API, and database layers.
+          </p>
+
+          <div className="stack-tags">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>React</span>
+            <span>PostgreSQL</span>
+            <span>REST APIs</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <ul>
+            <li>Built frontend and backend modules for expense, budget, employee, and report management</li>
+            <li>Implemented REST APIs, PostgreSQL persistence, and responsive UI screens</li>
+            <li>Built responsive UI screens and integrated them with backend APIs and PostgreSQL data storage</li>
+          </ul>
+
+          <a className="project-button" href="https://github.com/nisha-tamta/cashflow-manager" target="_blank" rel="noreferrer">View GitHub</a>
+        </div>
 
         <div className="project-card">
           <div className="project-image-wrap">
@@ -160,7 +199,7 @@ function App() {
       </section>
 
       <section id="experience" className="section">
-        <h3>Backend Experience Highlights</h3>
+        <h3>Experience Highlights</h3>
 
         <div className="experience-card">
           <h4>IQM Ad-Tech Platform</h4>
@@ -235,7 +274,7 @@ function App() {
       <section id="contact" className="section">
         <h3>Contact</h3>
         <div className="card">
-          <p className="contact-note">Open to backend software engineering and integration engineering opportunities.</p>
+          <p className="contact-note">Open to Java backend, Java full stack, and integration engineering opportunities.</p>
           <p>
             Email:{' '}
             <a href="mailto:nisha.tamta199@gmail.com">
