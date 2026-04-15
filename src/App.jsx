@@ -34,9 +34,9 @@ function App() {
       </header>
 
       <section className="hero">
-        <p className="tag">Java Backend Developer | Java Full Stack Developer</p>
+        <p className="tag">Java Backend Developer | Java Full Stack Developer | Integration Engineer</p>
         <h1>Nisha Tamta</h1>
-        <h2>AWS Certified Developer | Salesforce Certified MuleSoft Developer | Salesforce Certified Platform Administrator</h2>
+        <h2>AWS Certified Developer | MuleSoft Certified | Salesforce Certified Administrator</h2>
         <p className="hero-text">
           Software Engineer with 6+ years of experience building Java backend systems, REST APIs,
           cloud applications, full stack web applications, and enterprise integration solutions.
