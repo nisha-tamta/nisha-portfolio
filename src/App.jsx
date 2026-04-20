@@ -69,7 +69,7 @@ function App() {
 
           <div className="card">
             <h4>Frontend</h4>
-            <p>React, JavaScript, HTML5, CSS3</p>
+            <p>HTML, CSS, JavaScript, React</p>
           </div>
 
           <div className="card">
