@@ -234,38 +234,38 @@ function App() {
         <h3>Certifications</h3>
         <div className="grid">
           <div className="card">
-            <h4>AWS Certified Developer - Associate (DVA-C02)</h4>
-            <p>2026</p>
+            <h4>AWS Certified Developer — Associate (DVA-C02)</h4>
+            <p>Issued 2026 · Amazon Web Services</p>
             <a
               href="https://www.credly.com/badges/8e9366de-ef05-4bad-aade-03cf65f6036b/public_url"
               target="_blank"
               rel="noreferrer"
             >
-              Verify Credential
+              Verify on Credly ↗
             </a>
           </div>
 
           <div className="card">
             <h4>Salesforce Certified MuleSoft Developer</h4>
-            <p>2026</p>
+            <p>Issued 2026 · Salesforce / MuleSoft</p>
             <a
               href="https://trailhead.salesforce.com/en/credentials/verification/"
               target="_blank"
               rel="noreferrer"
             >
-              Verify Credential
+              Verify on Trailhead ↗
             </a>
           </div>
 
           <div className="card">
             <h4>Salesforce Certified Platform Administrator</h4>
-            <p>2026</p>
+            <p>Issued 2026 · Salesforce</p>
             <a
               href="https://trailhead.salesforce.com/en/credentials/verification/"
               target="_blank"
               rel="noreferrer"
             >
-              Verify Credential
+              Verify on Trailhead ↗
             </a>
           </div>
         </div>
