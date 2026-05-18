@@ -26,20 +26,21 @@ function App() {
         <nav>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
           <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <section className="hero">
-        <p className="tag">Java Backend Developer | Java Full Stack Developer | Integration Engineer</p>
+        <p className="tag">Java Backend Developer | Integration Engineer | Java Full Stack Developer</p>
         <h1>Nisha Tamta</h1>
         <h2>AWS Certified Developer | MuleSoft Certified | Salesforce Certified Administrator</h2>
         <p className="hero-text">
-          Software Engineer with 6+ years of experience building Java backend systems, REST APIs,
-          cloud applications, full stack web applications, and enterprise integration solutions.
+          Software Engineer with 6+ years of experience building scalable Java backend services, REST APIs,
+          and event-driven systems using Java, Spring Boot, and AWS. Hands-on MuleSoft integration and
+          Salesforce API experience. Full stack capable with React.
         </p>
         <div className="hero-buttons">
           <a className="primary-button" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
@@ -69,7 +70,7 @@ function App() {
 
           <div className="card">
             <h4>Frontend</h4>
-            <p>HTML, CSS, JavaScript, React</p>
+            <p>React, JavaScript, HTML, CSS</p>
           </div>
 
           <div className="card">
@@ -94,41 +95,93 @@ function App() {
         </div>
       </section>
 
-      <section id="projects" className="section">
-        <h3>Projects</h3>
+      <section id="experience" className="section">
+        <h3>Experience Highlights</h3>
 
-        <div className="project-card">
-          <div className="project-image-wrap">
-            <img src="/cashflow-manager-architecture.png" alt="CashFlow Manager architecture diagram" />
-          </div>
-          <h4>CashFlow Manager</h4>
+        <div className="experience-card">
+          <h4>IQM Ad-Tech Platform</h4>
           <p>
-            Built a full stack expense management web application using Java, Spring Boot, React, REST APIs, and PostgreSQL.
-            Implemented user authentication, expense tracking, budget management, reporting, and end-to-end CRUD functionality.
-          </p>
-
-          <p className="project-impact">
-            Showcases end-to-end full stack development across frontend, backend, API, and database layers.
+            Built backend solutions for IQM, an ad-tech platform, using Java, SQL, Snowflake, and AWS
+            to improve data processing and storage efficiency. Designed AWS Lambda-based serverless
+            components and integrated services such as EventBridge, SNS, SQS, SES, and S3 to support
+            scalable event-driven workflows.
           </p>
 
           <div className="stack-tags">
             <span>Java</span>
-            <span>Spring Boot</span>
-            <span>React</span>
-            <span>PostgreSQL</span>
-            <span>REST APIs</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>Snowflake</span>
+            <span>AWS Lambda</span>
+            <span>EventBridge</span>
+            <span>SNS</span>
+            <span>SQS</span>
+            <span>SES</span>
+            <span>S3</span>
           </div>
 
           <ul>
-            <li>Built frontend and backend modules for expense, budget, employee, and report management</li>
-            <li>Implemented REST APIs, PostgreSQL persistence, and responsive UI screens</li>
-            <li>Built responsive UI screens and integrated them with backend APIs and PostgreSQL data storage</li>
+            <li>Designed an async creative upload pipeline on AWS Lambda, SQS, and S3 eliminating upload
+              timeouts by offloading thumbnail generation and multi-resolution rendering to background workers</li>
+            <li>Engineered idempotent retry logic and explicit state machine (uploaded → processing →
+              partially failed → completed) to ensure consistency under async retries</li>
+            <li>Optimized Snowflake and SQL queries to improve backend data processing throughput</li>
           </ul>
+        </div>
 
-          <a className="project-button" href="https://github.com/nisha-tamta/cashflow-manager" target="_blank" rel="noreferrer">View GitHub</a>
+        <div className="experience-card">
+          <h4>PK Discovery — Dataguise, A PKWARE Company</h4>
+          <p>
+            Developed backend features for a sensitive data discovery and masking platform
+            with compliance support for HIPAA, PCI-DSS, and PHI across Oracle, SQL Server,
+            and PostgreSQL. Engineered multi-threaded Java backend for scanning semi-structured
+            JSON and XML payloads with optimized resource allocation and thread-safety.
+          </p>
+
+          <div className="stack-tags">
+            <span>Java</span>
+            <span>Multithreading</span>
+            <span>Oracle</span>
+            <span>SQL Server</span>
+            <span>PostgreSQL</span>
+            <span>JSON</span>
+            <span>XML</span>
+          </div>
+
+          <ul>
+            <li>Developed backend features for sensitive data discovery and masking with HIPAA, PCI-DSS, and PHI compliance</li>
+            <li>Engineered multi-threaded Java programs for scanning JSON and XML payloads across heterogeneous databases</li>
+            <li>Contributed to design, development, and testing of enterprise data-security workflows</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" className="section">
+        <h3>Projects</h3>
+
+        <div className="project-card">
+          <h4>Ad Creative Processing Pipeline | IQM Platform (Work Project)</h4>
+          <p>
+            Designed an async creative upload pipeline on AWS Lambda, SQS, and S3,
+            eliminating upload timeouts by offloading thumbnail generation and
+            multi-resolution rendering to background workers.
+          </p>
+          <p className="project-impact">
+            Reduced API response latency and ensured data consistency through
+            idempotent retry logic and explicit state tracking.
+          </p>
+          <div className="stack-tags">
+            <span>Java</span>
+            <span>AWS Lambda</span>
+            <span>SQS</span>
+            <span>S3</span>
+            <span>EventBridge</span>
+            <span>Spring Boot</span>
+          </div>
+          <ul>
+            <li>Built Java backend services and REST APIs for IQM, a programmatic ad-tech platform processing high-volume creative and campaign data</li>
+            <li>Designed event-driven serverless workflows on AWS Lambda integrated with EventBridge, SQS, SNS, SES, and S3 for resilient async processing</li>
+            <li>Optimized Snowflake and SQL queries to improve backend data processing throughput</li>
+          </ul>
         </div>
 
         <div className="project-card">
@@ -198,38 +251,6 @@ function App() {
         </div>
       </section>
 
-      <section id="experience" className="section">
-        <h3>Experience Highlights</h3>
-
-        <div className="experience-card">
-          <h4>IQM Ad-Tech Platform</h4>
-          <p>
-            Built backend solutions for IQM, an ad-tech platform, using Java, SQL, Snowflake, and AWS
-            to improve data processing and storage efficiency. Designed AWS Lambda-based serverless
-            components and integrated services such as EventBridge, SNS, SQS, SES, and S3 to support
-            scalable event-driven workflows.
-          </p>
-
-          <div className="stack-tags">
-            <span>Java</span>
-            <span>SQL</span>
-            <span>Snowflake</span>
-            <span>AWS Lambda</span>
-            <span>EventBridge</span>
-            <span>SNS</span>
-            <span>SQS</span>
-            <span>SES</span>
-            <span>S3</span>
-          </div>
-
-          <ul>
-            <li>Built Java-based backend solutions for an ad-tech platform</li>
-            <li>Designed Lambda-based components for scalable backend processing</li>
-            <li>Integrated AWS services to support resilient event-driven workflows</li>
-          </ul>
-        </div>
-      </section>
-
       <section id="certifications" className="section">
         <h3>Certifications</h3>
         <div className="grid">
@@ -274,7 +295,7 @@ function App() {
       <section id="contact" className="section">
         <h3>Contact</h3>
         <div className="card">
-          <p className="contact-note">Open to Java backend, Java full stack, and integration engineering opportunities.</p>
+          <p className="contact-note">Open to Java backend, integration engineering, and full stack opportunities.</p>
           <p>
             Email:{' '}
             <a href="mailto:nisha.tamta199@gmail.com">
