@@ -64,32 +64,32 @@ function App() {
         <h3>Skills</h3>
         <div className="skills-grid">
           <div className="card">
-            <h4>Backend</h4>
+            <h4>⚙️ Backend</h4>
             <p>Java, Spring Boot, Hibernate, JPA, Microservices, REST APIs</p>
           </div>
 
           <div className="card">
-            <h4>Frontend</h4>
+            <h4>🖥️ Frontend</h4>
             <p>React, JavaScript, HTML, CSS</p>
           </div>
 
           <div className="card">
-            <h4>Cloud</h4>
+            <h4>☁️ Cloud</h4>
             <p>AWS Lambda, S3, SQS, SNS, EventBridge, RDS, CloudWatch, IAM</p>
           </div>
 
           <div className="card">
-            <h4>Integration</h4>
+            <h4>🔗 Integration</h4>
             <p>MuleSoft, DataWeave, API-led Connectivity, Postman, Swagger, OAuth 2.0, JSON, XML</p>
           </div>
 
           <div className="card">
-            <h4>Salesforce</h4>
+            <h4>☁ Salesforce</h4>
             <p>Salesforce Integration, Salesforce Connector, Bulk API, Composite API, Platform Events, CDC, External IDs</p>
           </div>
 
           <div className="card">
-            <h4>Databases &amp; Tools</h4>
+            <h4>🗄️ Databases &amp; Tools</h4>
             <p>MySQL, PostgreSQL, Oracle, SQL Server, MongoDB, Git, Maven, Gradle, Jenkins, JUnit</p>
           </div>
         </div>
