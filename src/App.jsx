@@ -184,7 +184,7 @@ function App() {
           </ul>
         </div>
 
-<div className="project-card">
+        <div className="project-card">
           <div className="project-image-wrap">
             <img src="/salesforce-erpnext-mulesoft-sync-architecture.svg" alt="Salesforce to ERPNext MuleSoft sync architecture diagram" />
           </div>
@@ -218,7 +218,7 @@ function App() {
             <li>Structured error handling — 400 / 404 / 502 / 500 with correlationId in every response</li>
           </ul>
 
-          <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-customer-sync" target="_blank" rel="noreferrer">View GitHub</a>
+          <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-account-sync" target="_blank" rel="noreferrer">View GitHub</a>
         </div>
       </section>
 
