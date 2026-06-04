@@ -188,7 +188,7 @@ function App() {
           <div className="project-image-wrap">
             <img src="/salesforce-erpnext-mulesoft-sync-architecture.svg" alt="Salesforce to ERPNext MuleSoft sync architecture diagram" />
           </div>
-          <h4>Salesforce to ERPNext Customer Sync — MuleSoft</h4>
+          <h4>Salesforce Account Sync to ERPNext — MuleSoft</h4>
           <p>
             Built a production-style MuleSoft integration that syncs Salesforce Account data to ERPNext
             using a 3-layer architecture (Experience, Process, System). MuleSoft retrieves the full Account
