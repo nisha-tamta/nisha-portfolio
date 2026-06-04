@@ -184,67 +184,38 @@ function App() {
           </ul>
         </div>
 
-        <div className="project-card">
+<div className="project-card">
           <div className="project-image-wrap">
-            <img src="/project1-architecture.png" alt="Salesforce to ERP Customer Sync architecture diagram" />
+            <img src="/salesforce-erpnext-mulesoft-sync-architecture.svg" alt="Salesforce to ERPNext MuleSoft sync architecture diagram" />
           </div>
-          <h4>Salesforce to ERP Customer Sync using MuleSoft</h4>
+          <h4>Salesforce to ERPNext Customer Sync — MuleSoft</h4>
           <p>
-            Built an end-to-end MuleSoft integration between Salesforce and a mock ERP system using process
-            and system APIs. Implemented Salesforce Account upsert with External ID matching,
-            DataWeave transformations, and structured error handling to support reliable synchronization.
+            Built a production-style MuleSoft integration that syncs Salesforce Account data to ERPNext
+            using a 3-layer architecture (Experience, Process, System). MuleSoft retrieves the full Account
+            from Salesforce via SOQL, upserts the Customer in ERPNext using custom_salesforce_id as the
+            match key, and writes the sync status back to the Salesforce Account.
           </p>
 
           <p className="project-impact">
-            Improved synchronization reliability and reduced duplicate record risk through External ID–based upsert logic.
+            Achieved full bidirectional sync — Salesforce drives the data, ERPNext receives it,
+            and sync status (ERP_Status__c, Last_ERP_Sync__c) is written back to Salesforce automatically.
           </p>
 
           <div className="stack-tags">
             <span>MuleSoft 4</span>
             <span>DataWeave 2.0</span>
             <span>Salesforce Connector</span>
-            <span>REST APIs</span>
+            <span>ERPNext (Frappe REST)</span>
             <span>Maven</span>
             <span>Java 17</span>
-          </div>
-
-          <ul>
-            <li>Built process and system API flows for account synchronization</li>
-            <li>Implemented External ID–based create/update logic</li>
-            <li>Added validation, transformation, and structured error handling</li>
-          </ul>
-
-          <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-account-sync" target="_blank" rel="noreferrer">View GitHub</a>
-        </div>
-
-        <div className="project-card">
-          <div className="project-image-wrap">
-            <img src="/project2-architecture.png" alt="Salesforce to MuleSoft ERP Account Sync flow screenshot" />
-          </div>
-          <h4>Salesforce to MuleSoft ERP Account Sync</h4>
-          <p>
-            Built a MuleSoft flow to retrieve Salesforce Account data and synchronize transformed payloads
-            with a mock ERP API. Implemented Salesforce SOAP authentication, REST-based retrieval,
-            session handling, and end-to-end local testing.
-          </p>
-
-          <p className="project-impact">
-            Enabled consistent ERP synchronization using transformed Salesforce Account data.
-          </p>
-
-          <div className="stack-tags">
-            <span>MuleSoft</span>
-            <span>Salesforce Connector</span>
-            <span>SOAP</span>
-            <span>REST</span>
-            <span>DataWeave</span>
             <span>Postman</span>
           </div>
 
           <ul>
-            <li>Retrieved Salesforce Account data through a MuleSoft integration flow</li>
-            <li>Transformed payloads for downstream ERP synchronization</li>
-            <li>Tested the integration locally end to end</li>
+            <li>3-layer flow: Experience (HTTP + validation), Process (orchestration), System (SF + ERP calls)</li>
+            <li>Upsert logic: GET by custom_salesforce_id → PUT if exists, POST if new</li>
+            <li>Sync status writeback to Salesforce: ERP_Status__c, Last_ERP_Sync__c, External_Id__c</li>
+            <li>Structured error handling — 400 / 404 / 502 / 500 with correlationId in every response</li>
           </ul>
 
           <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-customer-sync" target="_blank" rel="noreferrer">View GitHub</a>
