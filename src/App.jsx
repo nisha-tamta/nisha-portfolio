@@ -186,9 +186,9 @@ function App() {
 
         <div className="project-card">
           <div className="project-image-wrap">
-            <img src="/salesforce-erpnext-mulesoft-sync-architecture.svg" alt="Salesforce to ERPNext MuleSoft sync architecture diagram" />
+            <img src="/sync-architecture-diagram.png" alt="Salesforce to ERPNext MuleSoft sync architecture diagram" />
           </div>
-          <h4>Salesforce Account Sync to ERPNext — MuleSoft</h4>
+          <h4>Salesforce to ERP Account Sync API - MuleSoft 4</h4>
           <p>
             Built a production-style MuleSoft integration that syncs Salesforce Account data to ERPNext
             using a 3-layer architecture (Experience, Process, System). MuleSoft retrieves the full Account
@@ -219,6 +219,45 @@ function App() {
           </ul>
 
           <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-account-sync" target="_blank" rel="noreferrer">View GitHub</a>
+        </div>
+
+        <div className="project-card">
+          <div className="project-image-wrap">
+            <img src="/cdc-architecture-diagram.png" alt="Salesforce to MuleSoft ERP Account CDC Sync architecture diagram" />
+          </div>
+          <h4>Salesforce to ERP Account CDC - MuleSoft 4</h4>
+          <p>
+            Built a real-time, event-driven MuleSoft integration that listens to Salesforce
+            AccountChangeEvent CDC events and keeps ERPNext Customer records in sync automatically —
+            no polling, no manual trigger. Handles CREATE, UPDATE, and DELETE change types with
+            a 3-layer architecture (Experience, Process, System).
+          </p>
+
+          <p className="project-impact">
+            Production-resilient design with four patterns: idempotency store (prevents duplicate
+            processing), dead letter queue with admin replay API, pending-disable coordination for
+            race conditions, and a nightly reconciliation job to catch any missed events.
+          </p>
+
+          <div className="stack-tags">
+            <span>MuleSoft 4</span>
+            <span>DataWeave 2.0</span>
+            <span>Salesforce CDC</span>
+            <span>Salesforce Connector</span>
+            <span>ERPNext (Frappe REST)</span>
+            <span>ObjectStore</span>
+            <span>Maven</span>
+            <span>Java 17</span>
+          </div>
+
+          <ul>
+            <li>CDC listener on AccountChangeEvent — fires on every Account create, update, or delete in Salesforce</li>
+            <li>Idempotency store with composite key (replayId + recordId + changeType) to prevent duplicate processing</li>
+            <li>Dead letter queue with HTTP admin API — list, inspect, replay, or discard failed events</li>
+            <li>Nightly reconciliation job — detects and repairs missing, stale, or orphaned ERP records</li>
+          </ul>
+
+          <a className="project-button" href="https://github.com/nisha-tamta/salesforce-mulesoft-customer-sync" target="_blank" rel="noreferrer">View GitHub</a>
         </div>
       </section>
 
